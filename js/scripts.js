@@ -1,6 +1,8 @@
+
 var hisAge = function(number1) {
   if(number1 >= 21){
     //show the voting
+
     return true;
   }else{
     // dont show voting
@@ -20,12 +22,13 @@ $(document).ready(function() {
 
     var number1 = parseInt($("#add1").val());
     var number2 = parseInt($("#add2").val());
-    var age = hisAge(number2);
+    //var age = hisAge(number2);
 
-    if(age){
+    if(number2 >= 21){
       $("ul").show();
     }else {
-      $("div#output").show ();
+
+      $("p").show();
     }
 
 
